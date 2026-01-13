@@ -1,18 +1,129 @@
-# React + Vite
+# Core Concepts – React + Vite + Bun
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimal React application bootstrapped with **Vite** and powered by **Bun** for fast installs and development.  
+This project uses **React (JavaScript) with the React Compiler** template.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## React Compiler
+- **Bun** – JavaScript runtime & package manager
+- **Vite** – Lightning-fast frontend tooling
+- **React** – UI library
+- **JavaScript (ESM)** – No TypeScript in this setup
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## 📦 Project Setup
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Make sure you have **Bun** installed:
+
+```bash
+bun --version
+```
+
+If not installed:
+
+```bash
+curl -fsSL https://bun.sh/install | bash
+```
+
+---
+
+## 🛠️ Getting Started
+
+### 1️⃣ Create the project
+
+```bash
+bun create vite
+```
+
+Selections:
+
+- Project name: `core-concepts`
+- Framework: `React`
+- Variant: `react + compiler (JavaScript)`
+
+---
+
+### 2️⃣ Install dependencies
+
+```bash
+cd core-concepts
+bun install
+```
+
+---
+
+### 3️⃣ Start development server
+
+```bash
+bun dev
+```
+
+The app will be available at:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 📁 Project Structure
+
+```
+hello-world/
+├─ public/
+├─ src/
+│  ├─ App.jsx
+│  ├─ main.jsx
+│  └─ index.css
+├─ index.html
+├─ package.json
+├─ vite.config.js
+└─ README.md
+```
+
+---
+
+## 🏗️ Build for Production
+
+```bash
+bun run build
+```
+
+The output will be generated in the `dist/` folder.
+
+---
+
+## 🔍 Preview Production Build
+
+```bash
+bun run preview
+```
+
+---
+
+## 🧹 Linting (Optional)
+
+If ESLint is included:
+
+```bash
+bun run lint
+```
+
+---
+
+## 💡 Notes
+
+- This project uses **JavaScript**, not TypeScript
+- React Compiler is enabled via the Vite template
+- Bun is used for dependency management and scripts
+
+---
+
+## 📜 License
+
+This project is open-source and available under the **MIT License**.
