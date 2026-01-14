@@ -74,7 +74,7 @@ http://localhost:5173
 ## 📁 Project Structure
 
 ```
-hello-world/
+core-concepts/
 ├─ public/
 ├─ src/
 │  ├─ App.jsx
