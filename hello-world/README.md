@@ -42,7 +42,7 @@ bun create vite
 
 Selections:
 
-- Project name: `hello-world`
+- Project name: `state-demo`
 - Framework: `React`
 - Variant: `react + compiler (JavaScript)`
 
@@ -51,7 +51,7 @@ Selections:
 ### 2️⃣ Install dependencies
 
 ```bash
-cd hello-world
+cd state-demo
 bun install
 ```
 
@@ -74,7 +74,7 @@ http://localhost:5173
 ## 📁 Project Structure
 
 ```
-hello-world/
+state-demo/
 ├─ public/
 ├─ src/
 │  ├─ App.jsx
