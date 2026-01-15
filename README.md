@@ -1,89 +1,154 @@
-# React 19 Practice 🚀
+# React 19 Practice Lab 🚀
 
-This repository is created for **practicing and experimenting with React 19** features, concepts, and best practices. It serves as a hands-on playground to explore both new and core React ideas.
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react\&logoColor=white)
+![Bun](https://img.shields.io/badge/Bun-runtime-000000?logo=bun\&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-build-646CFF?logo=vite\&logoColor=white)
 
-## 📌 Purpose
+A **monorepo-style learning lab** for practicing and experimenting with **React 19**.
+This repository is organized into multiple isolated workspaces, each focused on a specific React concept or feature.
 
-- Learn and practice **React 19**
-- Experiment with new APIs and improvements
-- Strengthen understanding of React fundamentals
-- Build small components and mini-features for practice
+---
+
+## 🎯 Project Objective
+
+* Explore **React 19** features and APIs
+* Practice core React concepts in isolation
+* Maintain a **scalable monorepo structure**
+* Encourage clean, modular learning patterns
+* Serve as a long-term React experimentation lab
+
+---
 
 ## 🛠️ Tech Stack
 
-- **React 19**
-- **JavaScript (ES6+)**
-- **Bun**
-- **Vite**
-- **HTML5 & CSS3**
+* **React 19**
+* **JavaScript (ES6+)**
+* **Bun** (package manager & runtime)
+* **Vite** (dev server & bundler)
+* **HTML5 & CSS3**
 
-## 📂 Project Structure
+---
+
+## 🧱 Monorepo Structure
 
 ```
 react-19-practice/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── hooks/
-│   ├── App.jsx
-│   └── main.jsx
-├── public/
-├── bun.lockb
-├── package.json
-└── README.md
+├── hello-world/
+├── core-concepts/
+├── handling-events/
+├── state-demo/
+├── README.md
+└── .gitignore
 ```
+
+---
 
 ## ✨ Topics Covered
 
-- JSX & Components
-- Props & State
-- Event Handling
-- Conditional Rendering
-- Lists & Keys
-- Hooks (`useState`, `useEffect`, etc.)
-- New React 19 features
-- Component reusability
-- Basic performance optimization
+* JSX & Functional Components
+* Props & State
+* Event Handling
+* Conditional Rendering
+* Lists & Keys
+* Hooks (`useState`, `useEffect`, etc.)
+* React 19 features
+* Component reusability
+* Basic performance optimizations
+
+---
 
 ## 🚀 Getting Started
 
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/chinmayvivek/react-19-practice.git
+git clone https://github.com/ChinmayVivek/react-19-practice.git
+cd react-19-practice
+cd <project-name>
 ```
 
-### 2️⃣ Install Dependencies
+### 2️⃣ Install Root Dependencies
 
 ```bash
-cd react-19-practice
 bun install
 ```
 
-### 3️⃣ Run the Development Server
+### 3️⃣ Run a Specific App
 
 ```bash
+cd apps/hello-world
+bun install
 bun run dev
 ```
 
-The app will run on:
+App will be available at:
 
 ```
 http://localhost:5173
 ```
 
-## 🧪 Practice Approach
+---
 
-- Each component focuses on **one concept**
-- Code is kept **simple and readable**
-- Experiments are separated for clarity
-- Comments are added for better understanding
+## ⬆️ Update React to the Latest Version
+
+To upgrade React across an app:
+
+```bash
+bun add react@latest react-dom@latest
+```
+
+(Optional: verify versions)
+
+```bash
+bun pm ls react react-dom
+```
+
+---
+
+### Create new project
+
+```bash
+bun create vite
+```
+
+Selections:
+
+- Project name: `project-name`
+- Framework: `React`
+- Variant: `react + compiler (JavaScript)`
+
+---
+
+## 🧪 Learning Philosophy
+
+* **One concept per app**
+* Minimal boilerplate
+* Clean and readable code
+* Well-commented examples
+* Easy experimentation without side effects
+
+---
 
 ## 📚 Resources
 
-- [React Documentation](https://react.dev/)
-- [React 19 Release Notes](https://react.dev/blog)
+* [React Documentation](https://react.dev/)
+* [React 19 Release Notes](https://react.dev/blog)
+* [Bun Documentation](https://bun.sh/docs)
+* [Vite Documentation](https://vitejs.dev)
 
-## 📌 Notes
+---
 
-This project is **for learning purposes only** and not intended for production use.
+## 📌 Disclaimer
+
+This project is intended **for educational purposes only** and is not production-ready.
+
+---
+
+## 🔮 Future Enhancements
+
+* TypeScript migration
+* Shared ESLint & Prettier config
+* CI workflow for linting
+* Testing playground (Vitest / RTL)
+
+---
